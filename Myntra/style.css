@@ -1,0 +1,118 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Roboto:wght@300&display=swap');
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+font-family: 'Roboto', sans-serif;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background: white;
+    height: 79px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.rightbox{
+    display: flex;
+    margin: 12px;
+}
+
+
+
+.left img{
+    width: 32px;
+    height: 23px;
+
+}
+.container{
+   padding:  0 10vw;
+}
+.containerheader{
+   padding:  0 10vw;
+}
+
+nav{
+    font-size: 12px;
+    padding-top: 20px;
+}
+nav ul li{
+    list-style: none;
+    padding: 0px 12px;
+}
+
+.section1{
+    background: #f2f2f2;
+}
+
+.search{
+    width: 28vw;
+    padding: 11px 17px;
+    /* border: 0.5px solid grey; */
+    border-radius: 4px;
+    background: #f3f3f3;
+    border: none;
+}
+
+.homeimg{
+    width: 80vw;
+    margin: 28px 0px;
+
+}
+.itemimg{
+    width: 6vw;
+    margin: 6px 13px;
+
+}
+
+footer{
+    padding: 23px;
+    text-align: center;
+    box-shadow: rgba(0 0 0 / 24%) 0px 3px 8px;
+}
+
+@media (max-width: 1080px){
+    .itemimg{
+        margin: auto;
+    }
+    .homeimg{
+        margin: auto;
+    }
+    nav ul li {
+        list-style: none;
+        padding: 0px 3px;
+        font-size: 10px;
+    }
+    .search {
+        width: 61vw;
+        padding: 8px 17px;
+        /* border: 0.5px solid grey; */
+        border-radius: 4px;
+        background: #f3f3f3;
+        border: none;
+    }
+    .containerheader {
+        padding: 0 2vw;
+    }
+    header{
+        height: 122px;
+    }
+
+    nav{
+    flex-direction: column;
+    align-items: center;
+    }
+    .right{
+    flex-direction: column;
+    }
+    .rightbox{
+    display: flex;
+    margin: 12px;
+    }
+
+}

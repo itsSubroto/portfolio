@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Gilroy'; */
+    /* font-family: 'Baloo Bhai 2', 'cursive';
+    font-family: 'Roboto', 'sans-serif'; */
+
+}
+
+html, body,main{
+    height: 100%;
+    width: 100%;
+
+}
+
+.nav{
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dadada;
+    padding: 0 5vw;
+}
+
+.logo{
+    font-size: 2.1vw;
+    /* padding: 1vw 2vw; */
+    font-weight: 600;
+}
+.nav-part2{
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+}
+
+.nav-part2 h4{
+    font-size: 1.3vw;
+}
+
+.nav i{
+    font-size: 3vw;
+    font-weight: 700;
+    display: none;
+}
+.nav-part2 button{
+    font-size: 1vw;
+    font-weight: 600;
+    padding: 0.7vw 1.4vw;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7659;
+    color: #fff;
+}
+
+
+
+
+.content{
+    height: calc(100% - 100px);
+    height: 525px;
+    /* height: 100%; */
+    width: 100%;
+    /* background: khaki; */
+    display: flex;
+    position: relative;
+}
+
+.left{
+    width: 55%;
+    height: 100%;
+    /* background-color: crimson; */
+    padding: 7vw 5vw;
+}
+
+.left h1{
+    font-size: 4.2vw;
+    line-height: 4.4vw;
+}
+
+.left h1 span{
+    color: #ff7659;
+}
+.left p{
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+}
+button{
+    font-size: 1.5vw;
+    font-weight: 700;
+    padding: 1.3vw 2.3vw;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7659;
+    color: #fff;
+}
+
+.right{
+    width: 45%;
+    height: 100%;
+    /* background-color: royalblue; */
+}
+.right img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width:600px) {
+    .nav{
+        /* background-color: lightseagreen; */
+        /* color: white; */
+        padding: 0 5vw;
+        height: 60px;
+    }
+    .logo{
+        font-size: 6vw;
+        /* display: block; */
+
+    }
+    .nav-part2 h4{
+        font-size: 4vw;
+        display: none;
+    }
+    .nav button{
+        display: none;
+
+    }
+    .nav i{
+        display: block;
+        font-size: 6vw;
+        font-weight: 800;
+
+    }
+
+    .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+    .left{
+        /* background-color: red; */
+        width: 100%;
+        height: 45%;
+        padding: 4vw 6vw;
+    }
+    .left h1{
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+    .left p{
+        font-size: 3vw ;
+        width: 90%;
+        margin-top: 5vw;
+        margin-bottom: 6vw;
+    }
+    .content button{
+        padding: 4vw 10vw;
+        font-size: 3.5vw;
+        border-radius: 5PX;
+        font-weight: 600;
+
+    }
+    .right{
+        /* background-color: blue; */
+        width: 100%;
+        height: 55%;
+
+
+
+    }
+}

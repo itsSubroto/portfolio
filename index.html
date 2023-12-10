@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subroto - Developer Proflio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Poppins:wght@400;700&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="service.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 100%;
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(17, 17, 65);
+        transition: 0.2s;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: rgb(173, 173, 233);
+        font-size: 1.04rem;
+      }
+
+      /* sticky navbar */
+      .sticky{
+        position: fixed;
+        top: o;
+        left: 0;
+        width: 100%;
+       
+      }
+
+      main hr {
+        border: 0;
+        background: #503bbb;
+        height: 1px;
+        margin: 60px 84px;
+      }
+      .left {
+        font-size: 1.6rem;
+    width: 306px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .left img{
+        border-radius: 50%;
+        width: 62px;
+        border: 3px solid #17c09b;
+      }
+
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 130px 0;
+        align-items: center;
+      }
+
+      .firstsection > div {
+        width: 33%;
+      }
+
+      .leftsection {
+        font-size: 3rem;
+      }
+
+      .leftsection button {
+        padding: 30px;
+      }
+
+      .leftsection .btn {
+        padding: 12px;
+        background: #30308f;
+        color: white;
+        border: 2px solid whie;
+        border: 2px solid white;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .rightsection img {
+        width: 104%;
+        margin: 1px 0px;
+        border-radius: 10px;
+        box-shadow: -24px 8px 30px rgb(95 111 226 / 13%);
+      }
+
+      .purple {
+        color: rgb(157, 86, 223);
+      }
+
+      .text-gray {
+        color: gray;
+      }
+
+      #element {
+        color: rgb(157, 86, 223);
+      }
+
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        height: 60vh;
+      }
+
+      .secondsection h1 {
+        font-size: 1.9rem;
+      }
+
+      .secondsection .box {
+        background-color: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondsection .vertical {
+    height: 41px;
+    width: 1px;
+    background-color: white;
+    margin: 4px 132px;
+}
+      /* .secondsection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 120px;
+      } */
+
+      .image-top {
+        width: 26px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .vertical-title {
+    position: relative;
+    top: 10px;
+    width: 216px;
+    font-size: 16px;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 15px;
+    color: gray;
+    width: 195px;
+    font-size: 14px;
+}
+
+      footer {
+        background-color: #141415;
+        margin-top: auto;
+      }
+
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+
+      .footer ul {
+        list-style: none;
+      }
+
+      .footer > div {
+        width: 223px;
+      }
+
+      footer .footer-right {
+        text-align: center;
+        color: gray;
+        padding: 12px 0px;
+      }
+    </style>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=0.1"> -->
+  </head>
+  <body>
+    <header>
+      <nav class="sticky">
+        <div class="left">
+          <img src="Subroto (2).gif" alt="">
+          Subroto's Portfolio
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact_me">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="firstsection">
+        <div class="leftsection">
+          Hi, My name is <span class="purple">Subroto</span>
+          <div>and I am a passinate</div>
+
+          <span id="element"></span>
+          <div class="buttons">
+            <a href="/MY_RESUME.pdf" target="_blank"><button class="btn">Download Resume</button></a>
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="Subroto (2).gif" alt="" />
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="about" class="secondsection">
+        <span class="text-gray">What I have done so fare</span>
+        <h1>Work Experience</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="html.png.png" alt="" />
+            <div class="vertical-title">HTML Devloper</div>
+            <div class="vertical-desc">
+              I have learned HTML. I know the tags that are mostly use and needed. I have made few website with the help of that. Few projects of mine are shown below in this website. Hope you like it. 
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="css.png" alt="" />
+            <div class="vertical-title">CSS Developer</div>
+            <div class="vertical-desc">
+              I have also learned CSS while learning HTML. So, with the help of CSS I can design my website very well. It gives very beautifull look
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="c-logo.png" alt="" />
+            <div class="vertical-title">C/C++</div>
+            <div class="vertical-desc">
+              I have learned a programming language, that is C and C++. 
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="instagram.png.png" alt="" />
+            <div class="vertical-title">Video Editing</div>
+            <div class="vertical-desc">
+              I have learned video editing. I used to edit reels for my instagram. I have given some sample video down there. Hope you like it.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="service" class="thirdsection">
+        <div class="row1">
+          <h1>What I Do</h1>
+          <span class="text-gray">
+            I design and develop services for customers of all sizes,
+            specializing in creating stylish, modern websites</span
+          >
+        </div>
+        <div class="row">
+          <div class="service-box">
+            <div class="service-img">
+              <img src="html.png.png" alt="" />
+            </div>
+            <div class="service-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              perferendis aspernatur debitis minus deleniti at veritatis, fugit,
+              molestias a autem aperiam? Magnam aspernatur temporibus quaerat
+              quidem deleniti. Ratione, eaque praesentium.
+            </div>
+          </div>
+          <div class="service-box">
+            <div class="service-img">
+              <img src="html.png.png" alt="" />
+            </div>
+            <div class="service-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              perferendis aspernatur debitis minus deleniti at veritatis, fugit,
+              molestias a autem aperiam? Magnam aspernatur temporibus quaerat
+              quidem deleniti. Ratione, eaque praesentium.
+            </div>
+          </div>
+          <div class="service-box">
+            <div class="service-img">
+              <img src="html.png.png" alt="" />
+            </div>
+            <div class="service-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              perferendis aspernatur debitis minus deleniti at veritatis, fugit,
+              molestias a autem aperiam? Magnam aspernatur temporibus quaerat
+              quidem deleniti. Ratione, eaque praesentium.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="project" class="forthsection">
+        <div class="row1">
+          <h1>Projects</h1>
+          <span class="text-gray">
+            The projects that I have been done is shown below. Hope it will help
+            you to give kowledge about my work</span
+          >
+        </div>
+        <div class="row2">
+          <div class="website">
+            <div class="project_title">
+              <h1>Websites</h1>
+            </div>
+            <div class="website_box">
+              <div class="project1">
+                <a href="Myntra/index.html" target="_blank"><h1>Project 1</h1></a>
+                <a href="Myntra/index.html" target="_blank"><img src="myntra_photo.JPG" alt=""></a>
+              </div>
+            <div class="project1">
+              <a href="landing_page/index.html" target="_blank"><h1>Project 2</h1></a>
+              <a href="landing_page/index.html" target="_blank"><img src="landing_page_photo.JPG" alt=""></a>
+            </div>
+            <div class="project1">
+              <a href="proect 1 (Gym webside)/index.html" target="_blank"><h1>Project 3</h1></a> 
+              <a href="proect 1 (Gym webside)/index.html" target="_blank"><img src="gym_photo_01.JPG" alt=""></a>
+            </div>
+            </div>
+          </div>
+
+
+          <div class="photography">
+            <div class="project_title">
+              <h1>Photography</h1>
+            </div>
+          <div class="website_box">
+            <div class="project1">
+              <h1>Project 1</h1> 
+              <img src="img1.jpeg" alt="">
+            </div>
+            <div class="project1">
+              <h1>Project 2</h1> 
+              <div class="vertical_img">
+                <img src="img2.jpeg" alt="">
+                <img id="img3" src="img3.jpg" alt="">
+              </div>
+            </div>
+            <div class="project1">
+              <h1>Project 3</h1> 
+              <img src="img4.jpg" alt="">
+            </div>
+            </div>
+          </div>
+          <div class="editing">
+            <div class="project_title">
+              <h1>Editing</h1>
+            </div>
+          <div class="editing_box">
+            <div class="editing_project1">
+              <h1>Project 1</h1> 
+              <video  controls muted loop preload="auto"  src="Movie Night.mp4"></video>
+            </div>
+            <div class="editing_project1">
+              <h1>Project 2</h1> 
+              <video  controls muted loop preload="auto" src="openhimer movie day.mp4"></video>
+            </div>
+            <div class="editing_project1">
+              <h1>Project 3</h1> 
+              <video  controls muted loop preload="auto" src="Utran Video.mp4"></video>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      
+     <hr> 
+
+
+
+
+    </main>
+    
+    <footer id="contact_me">
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Subroto's Devloper Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li><img class="footer_icon" src="/location.png" alt=""></li>
+            <li class="footer_title">Address</li>
+            <li class="footer_discription">  100ft Road, Nanikhodiyar Road, Anand, Gujarat</li>
+            <li><img class="footer_icon" src="/phone-call.png" alt=""></li>
+            <li class="footer_title">Phone/Whatsapp</li>
+            <li class="footer_discription" >8101677819</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li><a href="mailto:subratasantra9638@gmail.com" target="_blank"> <img class="footer_icon" src="/mail.png" alt=""></a></li>
+            <li class="footer_title">Email</li>
+            <li class="footer_discription" ><a class="footer_link" href="mailto:subratasantra9638@gmail.com" target="_blank">subratasantra9638@gmail.com </a></li>
+            <li><a href="instagram.com/subroto_9638" target="_blank"> <img class="footer_icon" src="/instagram_balck&white.png" alt=""></a></li>
+            <li class="footer_title">Instagram</li>
+            <li class="footer_discription" ><a class="footer_link" href="https://www.instagram.com/subroto_9638/" target="_blank">subroto_9638</a></li>
+          </ul>
+        </div>
+        <!-- <div class="footer-fourth">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div> -->
+      </div>
+      <div class="footer-right">
+          Copyright &#169 www.subrotoportfolio.com | All right reserve
+      </div>
+    </footer>
+ 
+    <!-- Typed JS. copied from github -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["<i>Web Developer</i> ", "Graphic Designer", "Video Editor"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
